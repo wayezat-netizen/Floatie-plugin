@@ -1,0 +1,26 @@
+name: Floatie
+version: '1.0.0'
+main: com.floatie.Floatie
+api-version: '1.21'
+author: Mervic
+description: Throw axes to clean floating blocks in a radius
+
+commands:
+  floatie:
+    description: Floatie plugin commands
+    usage: /<command> [reload|help]
+    aliases: [fl, flt]
+
+permissions:
+  floatie.*:
+    description: Grants all Floatie permissions
+    default: false
+    children:
+      floatie.admin: true
+      floatie.use: true
+  floatie.admin:
+    description: Access to admin commands
+    default: op
+  floatie.use:
+    description: Allows throwing axes to clean blocks
+    default: true

@@ -1,0 +1,90 @@
+# Floatie Configuration v2.0
+# Advanced Tree Chopping Plugin
+
+# Maximum blocks to remove per tree
+max-blocks: 500
+
+# Blocks that can be chopped with thrown axes
+cleanable-blocks:
+  - OAK_LOG
+  - SPRUCE_LOG
+  - BIRCH_LOG
+  - JUNGLE_LOG
+  - ACACIA_LOG
+  - DARK_OAK_LOG
+  - MANGROVE_LOG
+  - CHERRY_LOG
+  - CRIMSON_STEM
+  - WARPED_STEM
+  - OAK_WOOD
+  - SPRUCE_WOOD
+  - BIRCH_WOOD
+  - JUNGLE_WOOD
+  - ACACIA_WOOD
+  - DARK_OAK_WOOD
+  - MANGROVE_WOOD
+  - CHERRY_WOOD
+  - CRIMSON_HYPHAE
+  - WARPED_HYPHAE
+  - STRIPPED_OAK_LOG
+  - STRIPPED_SPRUCE_LOG
+  - STRIPPED_BIRCH_LOG
+  - STRIPPED_JUNGLE_LOG
+  - STRIPPED_ACACIA_LOG
+  - STRIPPED_DARK_OAK_LOG
+  - STRIPPED_MANGROVE_LOG
+  - STRIPPED_CHERRY_LOG
+  - STRIPPED_CRIMSON_STEM
+  - STRIPPED_WARPED_STEM
+
+# Should blocks drop items when broken?
+drop-items: true
+
+# Should axes be consumed when thrown?
+consume-axe: true
+
+# Axe throw velocity (higher = faster/farther)
+throw-velocity: 2.0
+
+# Cooldown between throws in seconds
+throw-cooldown: 2
+
+# Show visual flying axe? (uses armor stands)
+visual-axe: true
+
+# Animated removal (top-down, leaf-first removal)
+animated-removal: true
+
+# How far to search for leaves from logs (in blocks)
+leaf-search-radius: 6
+
+# Effects Settings
+effects:
+  # Enable particle and sound effects?
+  # Note: Particles disabled by default to reduce lag
+  enabled: false
+  
+  # Particle type: CLOUD, FLAME, SMOKE_NORMAL, VILLAGER_HAPPY, etc.
+  # Note: BLOCK_CRACK requires block data and may cause issues
+  particle-type: CLOUD
+
+# Performance Settings
+performance:
+  # Enable TPS checking (prevents usage when server is lagging)
+  # RECOMMENDED: Keep this enabled!
+  tps-check-enabled: true
+  
+  # Minimum TPS required to use plugin (default: 15.0)
+  # Plugin will automatically disable when TPS drops below this
+  min-tps: 15.0
+  
+  # Blocks removed per tick (lower = less lag, slower removal)
+  blocks-per-tick: 100
+  
+  # Delay between removal batches in ticks (1 tick = 0.05s)
+  removal-delay: 1
+  
+  # Maximum chunk loading radius (prevents loading distant chunks)
+  # Value in chunks (1 chunk = 16 blocks)
+  # Default: 5 chunks = 80 blocks radius
+  max-chunk-load-radius: 5
